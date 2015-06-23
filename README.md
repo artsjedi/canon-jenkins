@@ -12,12 +12,9 @@ Last tested with 1.591.
 
 ![After](cleanJenkinsAfter.png "After")
 
-## CDN URLs
-
-### HTTP
+## URLs
 
 CSS: https://raw.githubusercontent.com/artsjedi/clean-jenkins/master/style.css
-
 JS: https://raw.githubusercontent.com/artsjedi/clean-jenkins/master/app.js
 
 
@@ -27,13 +24,7 @@ JS: https://raw.githubusercontent.com/artsjedi/clean-jenkins/master/app.js
 2. Navigate to Jenkins > Manage Jenkins > Configure System > Theme
 3. Set _URL of theme CSS_ to `https://raw.githubusercontent.com/artsjedi/clean-jenkins/master/style.css` (or another URL of your setting/choosing)
 4. Set _URL of theme JS_ to `https://raw.githubusercontent.com/artsjedi/clean-jenkins/master/app.js` (or another URL of your setting/choosing)
-
-## Building
-
-```
-npm install
-grunt
-```
+ 
 
 ## To manually change SimpleTheme CSS and JS values
 
