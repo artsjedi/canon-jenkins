@@ -6,27 +6,27 @@ Last tested with 1.591.
 
 ### Before
 
-![Before](CanonJenkinsBefore.png "Before")
+![Before](cleanJenkinsBefore.png "Before")
 
 ### After
 
-![After](CanonJenkinsAfter.png "After")
+![After](cleanJenkinsAfter.png "After")
 
 ## CDN URLs
 
 ### HTTP
 
-CSS: https://raw.githubusercontent.com/artsjedi/canon-jenkins/master/style.css
+CSS: https://raw.githubusercontent.com/artsjedi/clean-jenkins/master/style.css
 
-JS: https://raw.githubusercontent.com/artsjedi/canon-jenkins/master/app.js
+JS: https://raw.githubusercontent.com/artsjedi/clean-jenkins/master/app.js
 
 
 ## Usage
 
 1. Install the [Simple Theme Plugin for Jenkins](https://wiki.jenkins-ci.org/display/JENKINS/Simple+Theme+Plugin)
 2. Navigate to Jenkins > Manage Jenkins > Configure System > Theme
-3. Set _URL of theme CSS_ to `https://raw.githubusercontent.com/artsjedi/canon-jenkins/master/style.css` (or another URL of your setting/choosing)
-4. Set _URL of theme JS_ to `https://raw.githubusercontent.com/artsjedi/canon-jenkins/master/app.js` (or another URL of your setting/choosing)
+3. Set _URL of theme CSS_ to `https://raw.githubusercontent.com/artsjedi/clean-jenkins/master/style.css` (or another URL of your setting/choosing)
+4. Set _URL of theme JS_ to `https://raw.githubusercontent.com/artsjedi/clean-jenkins/master/app.js` (or another URL of your setting/choosing)
 
 ## Building
 
@@ -43,7 +43,7 @@ grunt
 ```
 <?xml version='1.0' encoding='UTF-8'?>
 <org.codefirst.SimpleThemeDecorator plugin="simple-theme-plugin@0.3">
-  <cssUrl>https://raw.githubusercontent.com/artsjedi/canon-jenkins/master/style.css</cssUrl>
-  <jsUrl>https://raw.githubusercontent.com/artsjedi/canon-jenkins/master/app.js</jsUrl>
+  <cssUrl>https://raw.githubusercontent.com/artsjedi/clean-jenkins/master/style.css</cssUrl>
+  <jsUrl>https://raw.githubusercontent.com/artsjedi/clean-jenkins/master/app.js</jsUrl>
 </org.codefirst.SimpleThemeDecorator>
 ```
