@@ -32,10 +32,24 @@ a{
 
 }
 
-#side-panel-content a.task-link {
+
+#side-panel-content .task {
+    position:relative}
+
+#side-panel-content .task img{
+    display:absolute;
+    top:23px;   
+    left:10px;  
+    position: relative
+}
+
+
+#side-panel-content a.task-link,
+#side-panel-content a.task-link b {
   width:100%;
   display:block;
   padding:10px; 
+  padding-left:50px;
   margin:-10px 0;
   text-decoration: none;
   background-color: trasparent ;
@@ -43,13 +57,11 @@ a{
 }
  
 #side-panel-content a.task-link b{
+    width:320px;
     background-color: white;
     background: linear-gradient(to right, rgba(255,255,255,0.5) 0%,rgba(255,255,255,1) 50%); /* W3C */
-    width:320px;
-    display:block;
-    padding:10px; 
-    margin:-10px -10px;
     box-shadow: 0px 5px 5px 0 #CCC;
+    margin-left:-50px;
 }
 
 #side-panel-content a.task-link:hover{
@@ -65,15 +77,16 @@ a{
   margin:10px;
   box-shadow: 0px 1px 2px 0 #CCC;
 }
-#side-panel-content .task img,
+ 
 h1 img,
 #jenkins-head-icon, 
 #jenkins-name-icon, 
 #right-top-nav,
-.task-icon-link,
 .sortable.pane.bigtable ~table {
-    display: none!important;
+   display:none!important;
 }
+
+
  
 
 #header .login {
@@ -128,7 +141,7 @@ th.pane {
 }
 
 .bottom-sticker-edge {
-    display: none;
+    display:none;
 }
 
 .bottom-sticker-inner {
@@ -159,7 +172,8 @@ th.pane {
 }
 /* Hide first project table header cell contents */
 #projectstatus th:first-child * {
-    display: none;
+    adisplay:none;
+   
 }
 /* Base styling for project status project table cell, gray background by default to catch all project status states */
 #projectstatus td:first-child {
@@ -169,10 +183,10 @@ th.pane {
 }
 /* Hide standard Jenkins project status "ball" graphics in project table */
 #projectstatus td:first-child img {
-    display: none;
+     opacity: 0;
 }
 /* Error state (red) styling for project table */
-#projectstatus td:first-child[data="0"] {
+#projectstatus td:first-child[data="0"]{
     background-color: #C40022 !important;
 }
 /* Building state (orange stripes) styling for main project table and build process table on left side */
@@ -212,16 +226,109 @@ td.progress-bar-left {
 
 /*---------------------clean ---------------------------------*/
 .dashboard .pane-frame ~ div{
-  display:none
+ display:none
 }
 
+#management-links td{
+    padding-bottom:25px;
+}
 
 /* Repagination */
 #side-panel{
- 
   overflow:hidden;
   box-shadow:inset -5px 0 10px #CCC;
 }
  
  
-/**/
+/* ICONS */
+
+.icon-notepad{content: url('icons/ic_alarm_black_48dp.png')} 
+.icon-setting{content: url('icons/ic_settings_black_48dp.png')}
+.icon-user-v{content: url('icons/ic_alarm_black_48dp.png')} 
+
+.icon-up{content: url('icons/ic_arrow_back_black_48dp.png')}
+.icon-secure {content: url('icons/ic_lock_black_48dp.png')} 
+ 
+
+.icon-refresh {content: url('icons/ic_refresh_black_48dp.png')}
+.icon-plugin {content: url('icons/ic_extension_black_48dp.png')}
+.icon-computer {content: url('icons/ic_computer_black_48dp.png')}
+.icon-clipboard {content: url('icons/ic_content_paste_black_48dp.png')}
+.icon-monitor {content: url('icons/ic_insert_chart_black_48dp.png')}
+.icon-terminal {content: url('icons/ic_code_black_48dp.png')}
+.icon-network {content: url('icons/ic_device_hub_black_48dp.png')}
+.icon-help {content: url('icons/ic_help_black_48dp.png')}
+.icon-document {content: url('icons/ic_folder_open_black_48dp.png')}
+.icon-system-log-out {content: url('icons/ic_power_settings_new_black_48dp.png')}
+
+.icon-search {content: url('icons/ic_search_black_48dp.png')}
+.icon-folder{content: url('icons/ic_folder_open_black_48dp.png')}
+.icon-clock{content: url('icons/ic_build_black_48dp.png')}
+.icon-edit-delete {content: url('icons/ic_delete_black_48dp.png')}
+.icon-folder-delete {content: url('icons/ic_remove_circle_outline_black_48dp.png')}
+a[href$="credential-store"] img{ content: url('icons/ic_vpn_key_black_48dp.png')}
+
+#people img {content: url('icons/ic_person_black_48dp.png')}
+
+
+img[src$="new-package.png"]{ content: url('icons/ic_add_box_black_48dp.png')}
+img[src$="user.png"]{ content: url('icons/ic_group_black_48dp.png')}
+
+img[src$="credentials.png"]{ content: url('icons/ic_vpn_key_black_48dp.png')} 
+img[src$="new-domain.png"]{  content: url('icons/ic_domain_black_48dp.png')} 
+img[src$="domain.png"]{  content: url('icons/ic_domain_black_48dp.png')} 
+
+img[src$="health-00to19.png"] {  content: url('icons/ic_signal_cellular_connected_no_internet_0_bar_black_48dp.png')}
+img[src$="health-00to19.png"] {  content: url('icons/ic_signal_cellular_connected_no_internet_0_bar_black_48dp.png')} 
+img[src$="health-20to39.png"] {  content: url('icons/ic_signal_cellular_1_bar_black_48dp.png')} 
+img[src$="health-40to59.png"] {  content: url('icons/ic_signal_cellular_2_bar_black_48dp.png')} 
+img[src$="health-60to79.png"] {  content: url('icons/ic_signal_cellular_3_bar_black_48dp.png')} 
+img[src$="health-80plus.png"]{  content: url('icons/ic_signal_cellular_4_bar_black_48dp.png')}
+  
+img[src$="save.png"]{  content: url('icons/ic_save_black_48dp.png')}
+img[src$="previous.png"]{  content: url('icons/ic_arrow_back_black_48dp.png')}
+  
+img[src$="terminal.png"]{  content: url('icons/ic_code_black_48dp.png')}  
+img[src$="text.png"]{  content: url('icons/ic_insert_drive_file_black_48dp.png')}  
+
+img[src$="package.png"]{  content: url('icons/ic_folder_black_48dp.png')}
+
+
+img[src$="atom.gif"]{  content: url('icons/ic_share_black_48dp.png')}
+
+img[src$="go-next.png"]{  content: url('icons/ic_navigate_next_black_48dp.png')}
+/*status*/
+
+img[src$="aborted.gif"]{  content: url('icons/status/aborted.gif')}
+img[src$="aborted.png"]{  content: url('icons/status/aborted.png')}
+img[src$="aborted_anime.gif"]{  content: url('icons/status/aborted_anime.gif')}
+img[src$="blue.gif"]{  content: url('icons/status/blue.gif')}
+img[src$="blue.png"]{  content: url('icons/status/blue.png')}
+img[src$="blue_anime.gif"]{  content: url('icons/status/blue_anime.gif')}
+img[src$="clock.gif"]{  content: url('icons/status/clock.gif')}
+img[src$="clock.png"]{  content: url('icons/status/clock.png')}
+img[src$="clock_anime.gif"]{  content: url('icons/status/clock_anime.gif')}
+img[src$="disabled.gif"]{  content: url('icons/status/disabled.gif')}
+img[src$="disabled.png"]{  content: url('icons/status/disabled.png')}
+img[src$="disabled_anime.gif"]{  content: url('icons/status/disabled_anime.gif')}
+img[src$="edit-delete.gif"]{  content: url('icons/status/edit-delete.gif')}
+img[src$="edit-delete.png"]{  content: url('icons/status/edit-delete.png')}
+img[src$="edit-delete_anime.gif"]{  content: url('icons/status/edit-delete_anime.gif')} 
+img[src$="folder_anime.gif"]{  content: url('icons/status/folder_anime.gif')}
+img[src$="grey.gif"]{  content: url('icons/status/grey.gif')}
+img[src$="grey.png"]{  content: url('icons/status/grey.png')}
+img[src$="grey_anime.gif"]{  content: url('icons/status/grey_anime.gif')}
+img[src$="nobuilt.gif"]{  content: url('icons/status/nobuilt.gif')}
+img[src$="nobuilt.png"]{  content: url('icons/status/nobuilt.png')}
+img[src$="nobuilt_anime.gif"]{  content: url('icons/status/nobuilt_anime.gif')}
+img[src$="red.gif"]{  content: url('icons/status/red.gif')}
+img[src$="red.png"]{  content: url('icons/status/red.png')}
+img[src$="red_anime.gif"]{  content: url('icons/status/red_anime.gif')}
+img[src$="waiting.gif"]{  content: url('icons/status/waiting.gif')}
+img[src$="yellow.gif"]{  content: url('icons/status/yellow.gif')}
+img[src$="yellow.png"]{  content: url('icons/status/yellow.png')}
+img[src$="yellow_anime.gif"]{  content: url('icons/status/yellow_anime.gif')} 
+  
+
+
+
