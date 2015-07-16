@@ -86,9 +86,6 @@ h1 img,
    display:none!important;
 }
 
-
- 
-
 #header .login {
     top: inherit;
     margin-top: 3px;
@@ -96,6 +93,13 @@ h1 img,
 
 #header .login b {
     font-weight: normal;
+}
+
+#header #search-box {
+  background: #fff url(icons/ic_search_black_48dp.png) no-repeat 3px center/19px;
+  height: 28px;
+  padding-left: 25px;
+  border-radius: 0;
 }
 
 #header,
