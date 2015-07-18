@@ -6,11 +6,11 @@ Last tested with 1.591.
 
 ### Before
 
-![Before](cleanJenkinsBefore.png "Before")
+![Before](before.png "Before")
 
 ### After
 
-![After](cleanJenkinsAfter.png "After")
+![After](after.png "After")
 
 ## URLs
 
@@ -25,7 +25,8 @@ JS: https://cdn.rawgit.com/artsjedi/clean-jenkins/master/app.js
 2. Navigate to Jenkins > Manage Jenkins > Configure System > Theme
 3. Set _URL of theme CSS_ to `https://cdn.rawgit.com/artsjedi/clean-jenkins/master/style.css` (or another URL of your setting/choosing)
 4. Set _URL of theme JS_ to `https://cdn.rawgit.com/artsjedi/clean-jenkins/master/app.js` (or another URL of your setting/choosing)
- 
+
+![Usage](usage.gif "Usage")
 
 ## To manually change SimpleTheme CSS and JS values
 
