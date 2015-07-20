@@ -262,6 +262,7 @@ td.progress-bar-left {
 .icon-terminal {content: url('icons/ic_code_black_48dp.png')}
 .icon-network {content: url('icons/ic_device_hub_black_48dp.png')}
 .icon-help {content: url('icons/ic_help_black_48dp.png')}
+#header .icon-help {content: url('icons/ic_help_white_48dp.png')}
 .icon-document {content: url('icons/ic_folder_open_black_48dp.png')}
 .icon-system-log-out {content: url('icons/ic_power_settings_new_black_48dp.png')}
 
@@ -287,7 +288,7 @@ img[src$="health-00to19.png"] {  content: url('icons/ic_signal_cellular_connecte
 img[src$="health-20to39.png"] {  content: url('icons/ic_signal_cellular_1_bar_black_48dp.png')} 
 img[src$="health-40to59.png"] {  content: url('icons/ic_signal_cellular_2_bar_black_48dp.png')} 
 img[src$="health-60to79.png"] {  content: url('icons/ic_signal_cellular_3_bar_black_48dp.png')} 
-img[src$="health-80plus.png"]{  content: url('icons/ic_signal_cellular_4_bar_black_48dp.png')}
+img[src$="health-80plus.png"]{   content: url('icons/ic_done_black_48dp.png')}
   
 img[src$="save.png"]{  content: url('icons/ic_save_black_48dp.png')}
 img[src$="previous.png"]{  content: url('icons/ic_arrow_back_black_48dp.png')}
